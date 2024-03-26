@@ -1,0 +1,118 @@
+/* panel title font import*/
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+
+/* p text font import*/
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+/* centering the panels */
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+/* panel styling */
+.main-container{
+    display: flex;
+    align-items: center;
+    margin: 0 10%;
+    border-radius:7px;
+    overflow: hidden;
+}
+
+.panel{
+    padding: 20px 90px;
+}
+
+.inner-container{
+    margin: 5px 50px;
+}
+
+/* button styling */
+button{
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    font-family: "Lexend Deca", sans-serif;
+
+}
+
+#sedan-button{
+    color: hsl(31, 77%, 52%);
+}
+
+#suv-button{
+    color:  hsl(184, 100%, 22%);
+}
+
+#luxury-button{
+    color: hsl(179, 100%, 13%);
+}
+
+button:active{
+    color: hsl(0, 0%, 95%) !important;
+    background-color: hsl(0, 0%, 95%, 0);
+
+}
+
+/* text styling */
+h2{
+    font-family: "Big Shoulders Display", sans-serif;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%)
+}
+
+p{
+    font-family: "Lexend Deca", sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+
+/* setting background colors */
+#sedan-panel{
+    background-color: hsl(31, 77%, 52%);
+}
+
+#suv-panel{
+    background-color:  hsl(184, 100%, 22%);
+}
+
+#luxury-panel{
+    background-color: hsl(179, 100%, 13%);
+}
+
+/* responsiveness */
+/* mobile breakpoint*/
+@media (max-width: 450px){
+    .main-container{
+        flex-direction: column;
+  
+    }
+
+
+    
+}
+
+/* desktop + tablet breakpoint */
+@media (min-width: 450px){
+    .main-container{
+        flex-direction: row;
+        
+    }
+
+
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
